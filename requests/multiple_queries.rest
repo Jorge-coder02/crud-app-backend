@@ -1,0 +1,27 @@
+# GET all Products
+GET http://localhost:3001/api/products
+
+### GET Product by ID
+GET http://localhost:3001/api/products/67b2f99008eb867511aa8504
+
+### POST new Product
+POST http://localhost:3001/api/products
+Content-Type: application/json
+
+{
+  "name": "NewProduct",
+  "price": 1000
+}
+
+### DELETE Product by ID
+DELETE http://localhost:3001/api/products/67b2f99008eb867511aa8504
+
+### PUT (Update) Product by ID
+PUT http://localhost:3001/api/products/67b2f99008eb867511aa8504
+
+Content-Type: application/json
+{
+    "name": "NewProduct",
+    "price": 1000
+}
+
